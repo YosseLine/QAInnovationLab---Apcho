@@ -31,6 +31,17 @@ public class StoreStepsDef {
         DriverManager.screenShot();
     }
 
+    @Cuando("intento navegar a la categoria {string}")
+    public void intentoNavegarAlaCategoria(String categoria) {
+
+    }
+
+    @Entonces("valido que la Categoria {string} no existe")
+    public void validoQueLaCategoriaNoExiste(String categoria) {
+        System.out.println("La subcategoría " +categoria+ " no existe");
+        screenShot();
+    }
+
     @Cuando("navego a la categoria {string} y subcategoria {string}")
     public void navegoALaCategoriaYSubcategoria(String category, String subCategory) {
         CategorySteps CategorySteps = new CategorySteps(driver);
@@ -112,4 +123,5 @@ public class StoreStepsDef {
         Assertions.assertEquals(expected, finalPrice);
         DriverManager.screenShot();
     }
+
 }

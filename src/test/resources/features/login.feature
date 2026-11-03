@@ -3,7 +3,8 @@
 Característica: Validar precio
   Yo, como usuario
   Quiero, ingresar a la web
-  loguearme, navegar, elegir
+  loguearme, navegar, elegir un producto
+  y validar su precio
 
   @validarPrecio
   Esquema del escenario: Validación del precio de un producto
@@ -20,4 +21,10 @@ Característica: Validar precio
     | user                 | password    | category | subCategory | qty |
     | diego@gmail.com      | pickme05*Up | CLOTHES  | MEN         | 2   |
     | tepphy_fail@mail.com | 123456      | CLOTHES  | WOMEN       | 1   |
-    | diego@gmail.com      | pickme05*Up | CLOTHES  | MEN         | 2   |
+
+  @categoriaErronea
+  Escenario: Categoría no existe
+    Dado estoy en la página de la tienda
+    Y me logueo con mi usuario "diego@gmail.com" y clave "pickme05*Up"
+    Cuando intento navegar a la categoria "MANUALIDADES"
+    Entonces valido que la Categoria "MANUALIDADES" no existe
