@@ -14,6 +14,9 @@
 - target/cucumber/cucumber-report.html
 <img width="327" height="123" alt="image" src="https://github.com/user-attachments/assets/0c6468fb-443d-4aea-926f-63efbc7b2fbc" />
 
+## Link drive del video
+https://drive.google.com/file/d/1kEFOrL8lXYT3ygRTY3LHKsrDaE5FFKg4/view?usp=sharing
+
 
 
 
